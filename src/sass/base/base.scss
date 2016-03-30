@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    	box-sizing: border-box;
+}
+
+html, body {
+	height:100%;
+}
+
+body {
+	width: 100%;
+	font-weight: 400;
+	font-family: $font-family-light;
+	font-size: $font-size-default;
+	line-height: 1.4;
+	color: $color-gray;
+	background: $color-white;
+}
+
+a {
+	text-decoration: none;
+	color: $color-gray;
+	transition: color .3s ease; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

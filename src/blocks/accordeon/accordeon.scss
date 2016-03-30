@@ -1,0 +1,48 @@
+.accordeon {
+
+	@include push(3 of 12);
+	@include span(6 of 12);
+
+	@include respond-to('prebig') {
+		@include push(0 of 12);
+		@include span(12 of 12);
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	&__item {
+		background-color: $color-gray-light;
+		border-radius: 20px;
+	}
+
+	&__item + &__item {
+		margin-top: 5px;
+	}
+
+	&__title {
+		position: relative;
+		display: block;
+		padding-top: 12px;
+    	padding-bottom: 9px;
+    	padding-left: 20px;
+    	padding-right: 20px;
+		font-family: $font-family-medium;
+		color: $color-gray;
+		background-color: $color-gray-light;
+		border-radius: 20px;
+	}
+
+	&__item:nth-child(odd) &__title {
+		color: $color-white;
+		background-color: $color-gray-dark;
+	}
+
+	&__item &__active {
+		color: $color-white;
+		background-color: $color-orange;
+	}
+}

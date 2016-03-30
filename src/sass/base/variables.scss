@@ -1,0 +1,48 @@
+// Font-family
+$font-family-light: 'fira_sanslight', Arial, Helvetica, sans-serif;
+$font-family-medium: 'fira_sansmedium', Arial, Helvetica, sans-serif;
+
+// Font-size
+$font-size-extrasmall: 12px;
+$font-size-smaller: 13px;
+$font-size-small: 14px;
+$font-size-default: 15px;
+$font-size-premedium: 18px;
+$font-size-medium: 20px;
+$font-size-mediumplus: 22px;
+$font-size-prelarge: 24px;
+$font-size-semilarge: 32px;
+$font-size-large: 36px;
+$font-size-largeplus: 50px;
+$font-size-huge: 72px;
+$font-size-extrahuge: 90px;
+$font-size-megahuge: 130px;
+
+// Colors
+$color-gray: #4f4f4f;
+$color-gray-light: #e7e7e7;
+$color-gray-dark: #696666;
+$color-orange: #ff8663;
+$color-white: #fff;
+
+// Breakpoints 
+$breakpoints: (
+	'small' : (max-width: 480px),
+	'medium': (max-width: 640px),
+	'prebig': (max-width: 767px),
+	'big': (max-width: 800px),
+	'intermediary': (max-width: 960px),
+	'increased': (max-width: 1040px),
+	'huge': (max-width: 1260px),
+	'ultrahuge': (max-width: 1400px),
+	'premonsterhuge': (max-width: 1717px),
+	'monsterhuge': (max-width: 2000px)
+);
+
+// Grid
+$susy: (
+  columns: 12,
+  container: 1170px,
+  gutters: 1/4,
+  global-box-sizing: border-box
+);

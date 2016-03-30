@@ -1,0 +1,7 @@
+mixin accordeon-list(list)
+	each item in list
+		+e('li').item
+			+e('a').title(href="#")= item.title
+			+b('ul').dropdown
+				each val in item.list
+					+e('li').item= val

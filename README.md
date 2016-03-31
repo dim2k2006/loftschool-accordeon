@@ -1,5 +1,5 @@
 # Loftschool accordeon
-1. git clone @github.com:dim2k2006/loftschool-accordeon.git
+1. git clone git@github.com:dim2k2006/loftschool-accordeon.git
 
 2. cd loftschool-accordeon
 

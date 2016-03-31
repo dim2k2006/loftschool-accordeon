@@ -1,12 +1,11 @@
 .dropdown {
 	position: relative;
-	display: none;
+	max-height: 0;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	padding-top: 11px;
-	padding-bottom: 8px;
 	overflow: hidden;
+	transition: all .3s ease;
 
 	&__item {
 		padding-left: 22px;
@@ -16,4 +15,17 @@
 	&__item + &__item {
 		margin-top: 5px;
 	}
+
+	&__item:first-child {
+		margin-top: 11px;
+	}
+
+	&__item:last-child {
+		margin-bottom: 9px;
+	}
+}
+
+.accordeon_active + .dropdown {
+	display: block;
+	max-height: 600px;
 }

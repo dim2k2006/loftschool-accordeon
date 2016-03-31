@@ -29,11 +29,28 @@
 		padding-top: 12px;
     	padding-bottom: 9px;
     	padding-left: 20px;
-    	padding-right: 20px;
+    	padding-right: 40px;
 		font-family: $font-family-medium;
 		color: $color-gray;
 		background-color: $color-gray-light;
 		border-radius: 20px;
+		transition: all .3s ease;
+
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 0;
+			height: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 20px;
+			border-style: solid;
+			border-width: 12px 7px 0 7px;
+			border-color: #ff8563 transparent transparent transparent;
+			transform-origin: 50% 20%;
+			transition: all .3s ease;
+		}
 	}
 
 	&__item:nth-child(odd) &__title {
@@ -41,8 +58,14 @@
 		background-color: $color-gray-dark;
 	}
 
-	&__item &__active {
+	&__item &_active,
+	&__item:nth-child(odd) &_active {
 		color: $color-white;
 		background-color: $color-orange;
+
+		&:after {
+			border-color: #FFF transparent transparent transparent;
+			transform: rotate(180deg);
+		}
 	}
 }

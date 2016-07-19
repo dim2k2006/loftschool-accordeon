@@ -1,9 +1,7 @@
-var buttons = document.querySelectorAll('.accordeon__title');
+var list = document.querySelectorAll('.accordeon__list');
 
-for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function(event) {
-    	event.preventDefault();
+list[0].addEventListener('click', function(event) {
+    event.preventDefault();
 
-    	this.classList.toggle('accordeon_active');
-    });
-}
+    event.target.classList.toggle('accordeon_active');
+});
